@@ -95,7 +95,9 @@
     <Content Include="Content\daohang.css" />
     <Content Include="Content\image\1481784384_155697.png" />
     <Content Include="Content\image\book.jpg" />
+    <Content Include="Content\image\icon-cart.png" />
     <Content Include="Content\image\nav_bg_a1.png" />
+    <Content Include="Content\master.css" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -135,6 +137,7 @@
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Account\FogetPassword.cshtml" />
     <Content Include="Views\Shared\_Layout2.cshtml" />
+    <Content Include="Views\Home\category.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -144,6 +147,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\image\lpic\" />
+    <Folder Include="Content\image\mpic\" />
     <Folder Include="Controllers\Admin\" />
     <Folder Include="Models\" />
   </ItemGroup>

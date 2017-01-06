@@ -13,7 +13,13 @@ namespace Bookhive.Controllers.frontend
         {
             return View();
         }
-       
+
+        public ActionResult category()
+        {
+            return View();
+        }
+
+
 
     }
 }

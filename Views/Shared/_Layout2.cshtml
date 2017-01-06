@@ -4,10 +4,22 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <link href="/Content/daohang.css" rel="stylesheet" />
+<link href="~/Content/master.css" rel="stylesheet" />
 <style>
     .navbar{
         margin-bottom:0;
         border:0;
+    }
+
+    .nav-secondary .book-cart {
+        position: relative;
+        padding-left: 26px;
+        padding-top: 2px;
+        _padding-top: 0;
+        background-image: url('../../Content/image/icon-cart.png');
+        background-repeat: no-repeat;
+        background-position: left center;
+        _background-position: left 2px;
     }
 </style>
 
@@ -21,7 +33,7 @@
                 <a href="#">豆瓣读书</a>
             </div>
             <div class="nav-search">
-                <form action="https://book.douban.com/subject_search" method="get">
+                <form action="" method="get">
                     <fieldset>
                         <legend>搜索：</legend>
                         <label for="inp-query" style="display: none;">书名、作者、ISBN</label>
@@ -50,8 +62,7 @@
     <div class="nav-secondary">
 
         <ul class="nav-items">
-            <li class="nav-item-first"><a href="https://book.douban.com/tag/?icn=index-nav">分类浏览</a></li>
-
+            <li class="nav-item-first">@Html.ActionLink("分类浏览", "category", "Home")</li>
             <li class="book-cart ">
                 <a href="https://book.douban.com/cart?icn=index-nav">购书单</a>
             </li>
