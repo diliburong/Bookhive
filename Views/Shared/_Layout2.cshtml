@@ -1,0 +1,79 @@
+﻿
+@{
+    ViewBag.Title = "_Layout2";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="/Content/daohang.css" rel="stylesheet" />
+<style>
+    .navbar{
+        margin-bottom:0;
+        border:0;
+    }
+</style>
+
+
+
+
+<div id="db-nav-book" class="nav-book">
+    <div class="nav-wrap">
+        <div class="nav-primary">
+            <div class="nav-logo">
+                <a href="#">豆瓣读书</a>
+            </div>
+            <div class="nav-search">
+                <form action="https://book.douban.com/subject_search" method="get">
+                    <fieldset>
+                        <legend>搜索：</legend>
+                        <label for="inp-query" style="display: none;">书名、作者、ISBN</label>
+                        <div class="inp">
+                            <input id="inp-query" name="search_text" size="22" maxlength="60" value="" placeholder="书名、作者、ISBN" autocomplete="off" dir="ltr">
+                        </div>
+                        <div class="inp-btn">
+                            <input type="submit" value="搜索">
+                        </div>
+                        <input type="hidden" name="cat" value="1001">
+                    </fieldset>
+                </form>
+                <style>
+                    .nav-search,
+                    .nav .nav-primary {
+                        overflow: visible !important;
+                    }
+
+                    .nav-search {
+                        margin-left: 145px;
+                    }
+                </style>
+            </div>
+        </div>
+    </div>
+    <div class="nav-secondary">
+
+        <ul class="nav-items">
+            <li class="nav-item-first"><a href="https://book.douban.com/tag/?icn=index-nav">分类浏览</a></li>
+
+            <li class="book-cart ">
+                <a href="https://book.douban.com/cart?icn=index-nav">购书单</a>
+            </li>
+            <li>
+                <a href="https://read.douban.com/ebooks/?dcs=book-nav&amp;dcm=douban" target="_blank">电子图书</a>
+            </li>
+            <li>
+                <a href="https://market.douban.com/book?platform=web&amp;channel=book_nav">纸书</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+    <div class="container body-content">
+        @RenderBody()
+
+
+
+
+
+    </div>
